@@ -18,15 +18,16 @@ class AboutPage extends StatelessWidget {
         child: Column(
           children: [
             ElevatedButton(onPressed: (){
-             context.pop('/profile');
-            }, child: Text("Go To Profile Page")),
+             context.push('/fruitListScreen',extra: true);
+            },
+                child: Text("Go To Profile Page")),
             SizedBox(height: 300,),
             Column(
               children: [
                 Center(child: Text("This mobile name is : $category")),
                 Center(child: Text("Mobile Price is : $price")),
-                Center(child: Text("Price is less Then Android Phn : : $isClicked")),
-                Center(child: Text("Price is : : $pi")),
+                Center(child: Text("Price is less Then Android Phn  : $isClicked")),
+                Center(child: Text("Price is  : $pi")),
               ],
             ),
           ],

@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             // About page e jao
-                   context.push('/profile/121323/kjdsfvjbhdfgbjdf');
+                   context.push('/customScrollExample');
           },
           child: Text("Go to About Page"),
         ),
